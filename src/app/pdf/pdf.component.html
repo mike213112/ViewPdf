@@ -1,6 +1,6 @@
 <div>
   <!--<label> Pdf src </label>-->
-  <input (change)="onFileSelected()" type="file" id="file">
+  <input name="name" #name="ngModel" [(ngModel)]="pdfdata.name"  (change)="onFileSelected()" type="file" id="file">
   <div style="right: 50px">
     <button (click)="ViewPDF()">Ver pdf</button>
   </div>
